@@ -1,12 +1,12 @@
 def make_it_laugh(string):
     vowels = 'aeiouAEIOU'
-    modified_string = ''
-    for char in string:
-        if char in vowels:
-            modified_string += ' haha '
+    new_string = ''
+    for i in string:
+        if i in vowels:
+            new_string += '_haha_'
         else:
-            modified_string += char
-    print(modified_string)
+            new_string += i
+    print(new_string)
 
 input_string = input("Enter a string: ")
 make_it_laugh(input_string)
