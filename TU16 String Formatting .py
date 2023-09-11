@@ -13,3 +13,7 @@ for i in range(3):
 print("\nCenter with three decimal points")
 for i in range(3):
     print(f"{list1[i]:^15.3f} {list2[i]:^15.3f} {list3[i]:^15.3f}")
+
+
+number = int(input("Give me a number: "))
+print(f"Binary: {number:b}")
