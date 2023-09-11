@@ -1,0 +1,61 @@
+def LEFT(string,length):      
+    return string[0:length]
+
+def RIGHT(string,length):
+    return string[length:]
+
+def MID (string,start,end):
+    return string[start:(start+end):1]
+    
+def LENGTH (string):
+    return len(string)
+
+def LCASE (string):    
+    return string.lower()
+    
+def UCASE(string):
+    return string.upper()
+
+def TO_UPPER(string):
+    return string.upper()
+ 
+def TO_LOWER(string):
+    return string.lower()
+ 
+def NUM_TO_STRING(integer):
+    return str(integer)
+
+def STRING_TO_NUM(string):
+    return float(string)
+
+def INT(real):
+    return round(real,0)
+
+def ASC(char):
+    return ord(char)
+
+my_string = LEFT("abcdefgh",2)
+my_string1 = RIGHT("abcdefgh",5)
+my_string2 = MID("abcdefgh",2,3)
+my_string3 = LENGTH("abcdefgh")
+my_string4 = LCASE("ABCDefgh")
+my_string5 = UCASE("abcdEFgh")
+my_string6 = TO_UPPER("abCDefGH 456")
+my_string7 = TO_LOWER("ABCDeFgH 789")
+my_string8 = NUM_TO_STRING(12.34)
+my_string9 = STRING_TO_NUM("56.78")
+my_string10 = INT(666.666)
+my_string11 = ASC("A")
+
+print(my_string)
+print(my_string1)
+print(my_string2)
+print(my_string3)
+print(my_string4)
+print(my_string5)
+print(my_string6)
+print(my_string7)
+print(my_string8)
+print(my_string9)
+print(my_string10)
+print(my_string11)
