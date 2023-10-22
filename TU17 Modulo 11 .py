@@ -3,7 +3,7 @@ lst = str(input("Give me four numbers: "))
 checksum = int(input("Enter the checksum: "))
 #step 3
 for i in range(len(lst)):
-    new_list[i] = int(lst[i])*(i+1)
+    new_list[i] = int(lst[i])*(len(lst)+1-i)
 #step 4
 sum_list = sum(new_list)
 #step 5
