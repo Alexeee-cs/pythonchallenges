@@ -1,0 +1,7 @@
+sentence = str(input("write smth: "))
+sentence = sentence.lower()
+
+if any(char in sentence for char in 'qwerty'):
+    print('yes')
+else:
+    print('no')
