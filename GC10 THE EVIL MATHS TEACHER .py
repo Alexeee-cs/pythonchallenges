@@ -1,9 +1,9 @@
 x=0
 y=1
-print(x)
-print(y)
+print('0 : ',x)
+print('1 : ',y)
 for i in range(99):
-    print(x+y)
+    print((i+2),':',x+y)
     i=x
     x=y
     y=i+y
