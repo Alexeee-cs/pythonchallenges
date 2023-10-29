@@ -8,14 +8,10 @@ turtle.goto(-300,200)
 for i in range(11):
     turtle.color(colors[i])
     turtle.begin_fill()
-    for i in range (4):
+    for i in range (3):
         turtle.forward(30)
-        turtle.right(90)
+        turtle.right(120)
     turtle.end_fill()
+    turtle.penup()
     turtle.forward(40)
- 
-turtle.goto(-300,150)
-for i in range(11):
-    turtle.color(colors[i])
-    turtle.write(colors[i])
-    turtle.forward(40)
+    turtle.pendown()
