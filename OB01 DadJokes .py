@@ -9,7 +9,7 @@ def get_jokes():
     try:
         with open ("DadJokes.txt") as f:
             for line in f:
-                jokes.append((line).strip())
+                jokes.append(line.strip())
     except OSError:
         print("Sorry couldn't find the file")
 
