@@ -11,10 +11,10 @@ def Constructor():
 Constructor()
 pick = int(input("Enter a number from the range 1 to 5: "))
 class pattern():
-    def __init__(self, angle: int, times: int):
-        self.__angle = angle # Integer
-        self.__times = times # Integer
-    def draw_pattern(self):
+    def __init__(self):
+        self.__angle = 0 # Integer
+        self.__times = 0 # Integer
+    def draw_pattern(self,angle:int,times:int):
         colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
         turtle.setup(800, 600)  # setting window dimensions
         turtle.bgcolor('black')
@@ -28,9 +28,11 @@ class pattern():
     def setter(self):
         self.__angle = int(instruction[2*(pick-1)])
         self.__times = int(instruction[2*(pick-1)+1])
-    def Constructor(self):
-        return self.__angle, self.__times
+    def Constructor_angle(self):
+        return self.__angle
+    def Constructor_times(self):
+        return self.__times
 
-mypattern = pattern(0,0)
+mypattern = pattern()
 mypattern.setter()
-mypattern.draw_pattern()
+mypattern.draw_pattern(mypattern.Constructor_angle(),mypattern.Constructor_times())
