@@ -1,12 +1,12 @@
 playerlist = []
-def whatever():
+def load_players():
     try:
         with open ("Wrexham.txt") as f:
             for line in f:
                 playerlist.append(line.strip())
     except OSError:
         print("File not found")
-whatever()
+load_players()
 pick = int(input("Enter a number from the range 1 to 28: "))
 communityinvolvement = int(input("Enter the change in community involvement: "))
 injury = input("Is he injured? (t/f) ")
